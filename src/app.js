@@ -9,7 +9,7 @@ const port = 3000;
 
 app.get("/musicians", async (request, response) =>{
     const musician = await Musician.findAll();
-    response.json(musicians);
+    response.json(musician);
 
 })
 

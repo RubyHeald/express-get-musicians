@@ -11,12 +11,8 @@ const seedMusician = require("./seedData");
 
 
 describe('./musicians endpoint', () => {
-    // Write your tests here
-    
-    
-
-
-
-
-    
+    test("Testing musicians endpoint", async () => {
+        const response = await request(app).get("/musicians");
+        const responseData = JSON.parse(response.text);
+    })
 })
