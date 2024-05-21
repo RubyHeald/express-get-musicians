@@ -14,5 +14,7 @@ describe('./musicians endpoint', () => {
     test("Testing musicians endpoint", async () => {
         const response = await request(app).get("/musicians");
         const responseData = JSON.parse(response.text);
+        expect (response.seedMusician = [])
     })
+
 })
